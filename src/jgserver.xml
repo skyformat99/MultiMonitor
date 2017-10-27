@@ -1,0 +1,20 @@
+<serverlist>
+	<server ip="180.153.137.164" port="8891" note="²âÊÔ" subtrans="true">
+	<HKINDEXF>HKINDEXF</HKINDEXF>
+	<HKSTOCKF>HKSTOCKF</HKSTOCKF>
+	<HKCNYF>HKCNYF</HKCNYF>
+	<HKMETALFS>HKMETALFS</HKMETALFS>
+	</server>
+	<server ip="180.153.137.164" port="8899" note="²âÊÔ" subtrans="true">
+	<CNYOFFS>CNYOFFS</CNYOFFS>
+	</server>
+	<server ip="180.153.137.164" port="8860" note="²âÊÔ" subtrans="true">
+	<HS>HS</HS>
+	<CSIINDEX1>CSIINDEX1</CSIINDEX1>
+	<CSIINDEX2>CSIINDEX2</CSIINDEX2>
+	</server>
+	<server ip="180.153.137.164" port="7777" note="²âÊÔ" subtrans="true">
+	<SHFE>SHFE</SHFE>
+	</server>
+</serverlist>
+

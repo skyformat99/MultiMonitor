@@ -1,0 +1,9 @@
+<?xml version="trans_viewer 4.0" encoding="utf-8"?>
+<con>
+  <id>404</id>
+  <name>magic keyboard</name>
+  <musicfiles>
+        <musicfile>./water_flowing.wav</musicfile>
+        <musicfile>./flog.wav</musicfile>
+  </musicfiles>
+</con>

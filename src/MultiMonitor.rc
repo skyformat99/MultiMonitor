@@ -1,0 +1,469 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MultiMonitor.rc2""  // ????¨???¨?? Microsoft Visual C++ ????§????ì??ì????ì????¨???¨??-|???§???????§????ì|????ì?o???\r\n"
+    "#include ""afxres.rc""     // ????§????ì??ì????ì?o????§????ì|?????§????ì|????ì?|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\earth.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MultiMonitor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "东方财富外盘数据转发监控 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_MULTIMONITOR_DIALOG DIALOGEX 0, 0, 896, 457
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TransViewer 3.1.0"
+FONT 6, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,17,881,433
+END
+
+IDD_DIALOG_MDS DIALOGEX 0, 0, 730, 366
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_MDS,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,0,722,358
+END
+
+IDD_DIALOG_TRANS DIALOGEX 0, 0, 451, 300
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST_TRANS,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,451,300
+END
+
+IDD_DIALOG_GRA DIALOGEX 0, 0, 703, 335
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "刷新",IDCFLASH,623,315,50,14
+    CONTROL         "",IDC_LIST_GRA,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,22,274,296
+    CONTROL         "",IDC_STATIC_GRA,"Static",SS_WHITEFRAME | NOT WS_VISIBLE,287,0,321,200
+    LTEXT           "卖一",IDC_STATIC_SEL1,613,100,17,8
+    EDITTEXT        IDC_EDIT_SEL1,639,97,40,14,ES_AUTOHSCROLL
+    LTEXT           "买一",IDC_STATIC_BUY1,613,119,17,8
+    EDITTEXT        IDC_EDIT_BUY1,639,116,40,14,ES_AUTOHSCROLL
+    LTEXT           "最新价",IDC_STATIC_LATESTP,292,242,25,8
+    EDITTEXT        IDC_EDIT_LATESTP,323,240,40,14,ES_AUTOHSCROLL
+    LTEXT           "成交量",IDC_STATIC_VOL,375,245,25,8
+    EDITTEXT        IDC_EDIT_VOL,406,241,40,14,ES_AUTOHSCROLL
+    LTEXT           "成交金额",IDC_STATIC_AMOUNT,450,247,32,8
+    EDITTEXT        IDC_EDIT_AMOUNT,484,245,52,14,ES_AUTOHSCROLL
+    LTEXT           "最高价",IDC_STATIC_HIGH,291,274,25,8
+    EDITTEXT        IDC_EDIT_HIGH,323,272,40,14,ES_AUTOHSCROLL
+    LTEXT           "最低价",IDC_STATIC_LOW,375,276,25,8
+    EDITTEXT        IDC_EDIT_LOW,407,271,40,14,ES_AUTOHSCROLL
+    LTEXT           "今开",IDC_STATIC_OPEN,457,276,17,8
+    EDITTEXT        IDC_EDIT_OPEN,484,273,52,14,ES_AUTOHSCROLL
+    LTEXT           "昨收",IDC_STATIC_CLOSE,294,303,17,8
+    EDITTEXT        IDC_EDIT_CLOSE,322,298,40,14,ES_AUTOHSCROLL
+    LTEXT           "持仓量",IDC_STATIC_INVHOLD,375,302,25,8
+    EDITTEXT        IDC_EDIT_INVHOLD,409,297,40,14,ES_AUTOHSCROLL
+    LTEXT           "昨结",IDC_STATIC_PRESET,458,301,17,8
+    EDITTEXT        IDC_EDIT_PRESET,484,298,52,14,ES_AUTOHSCROLL
+    LTEXT           "日期",IDC_STATIC_DATE,291,217,17,8
+    EDITTEXT        IDC_EDIT_DATE,323,212,40,14,ES_AUTOHSCROLL
+    LTEXT           "时间",IDC_STATIC_TIME,376,216,17,8
+    EDITTEXT        IDC_EDIT_TIME,405,214,40,14,ES_AUTOHSCROLL
+    LTEXT           "股票代码",IDC_STATIC_CODE,449,217,33,8
+    EDITTEXT        IDC_EDIT_CODE,485,215,49,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SERVER,41,3,101,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Server List",IDC_STATIC_SERVER,0,5,35,8
+    LTEXT           "Market",IDC_STATIC_Market,152,5,23,8
+    COMBOBOX        IDC_COMBO_MARKET,179,3,55,105,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "今结",IDC_STATIC_SETTLE,544,300,17,8
+    EDITTEXT        IDC_EDIT_SETTLE,569,296,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AVG,567,274,40,14,ES_AUTOHSCROLL
+    LTEXT           "均价",IDC_STATIC_AVG,543,279,17,8
+    LTEXT           "成交笔数",IDC_STATIC_TRDNUM,538,247,33,8
+    EDITTEXT        IDC_EDIT_TRDNUM,571,246,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PREINV,569,214,40,14,ES_AUTOHSCROLL
+    LTEXT           "昨持仓",IDC_STATIC_PREINV,540,216,25,8
+    LTEXT           "买二",IDC_STATIC_BUY2,614,134,17,8
+    EDITTEXT        IDC_EDIT_BUY2,639,135,40,12,ES_AUTOHSCROLL
+    LTEXT           "买三",IDC_STATIC_BUY3,614,150,17,8
+    EDITTEXT        IDC_EDIT_BUY3,639,148,40,14,ES_AUTOHSCROLL
+    LTEXT           "买四",IDC_STATIC_BUY4,614,167,17,8
+    EDITTEXT        IDC_EDIT_BUY4,640,165,40,14,ES_AUTOHSCROLL
+    LTEXT           "买五",IDC_STATIC_BUY5,614,182,17,8
+    EDITTEXT        IDC_EDIT_BUY5,639,182,40,14,ES_AUTOHSCROLL
+    LTEXT           "卖二",IDC_STATIC_SEL2,612,83,17,8
+    EDITTEXT        IDC_EDIT_SEL2,640,79,40,14,ES_AUTOHSCROLL
+    LTEXT           "卖三",IDC_STATIC_SEL3,612,65,17,8
+    EDITTEXT        IDC_EDIT_SEL3,639,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "卖四",IDC_STATIC_SEL4,611,47,17,8
+    EDITTEXT        IDC_EDIT_SEL4,639,44,40,14,ES_AUTOHSCROLL
+    LTEXT           "卖五",IDC_STATIC_SEL5,612,30,17,8
+    EDITTEXT        IDC_EDIT_SEL5,639,26,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TRANSDELAY DIALOGEX 0, 0, 952, 434
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST_TRANSDELAY,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,1,98,369
+    CONTROL         "",IDC_LIST_TRANSFULL,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,142,1,716,369
+END
+
+IDD_DIALOG_TRANS_GQS DIALOGEX 0, 0, 451, 300
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST_TRANS_GQS,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,451,300
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "东方财富信息股份有限公司"
+            VALUE "FileDescription", "TransViewer -- EastMoney"
+            VALUE "FileVersion", "2.0.0.1"
+            VALUE "InternalName", "TransViewer"
+            VALUE "LegalCopyright", "2014-2015 (C) <东方财富信息股份有限公司>。保留所有权利。"
+            VALUE "OriginalFilename", "TransViewer"
+            VALUE "ProductName", "TransViewer"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MULTIMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 888
+        BOTTOMMARGIN, 450
+    END
+
+    IDD_DIALOG_MDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_DIALOG_TRANS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_GRA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 696
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_DIALOG_TRANSDELAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 858
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_DIALOG_TRANS_GQS, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADERCTRL_SPAN_NORMAL BITMAP                  "res\\bitmap1.bmp"
+IDB_HEADERCTRL_END_NORMAL BITMAP                  "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 TransViewer(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_TRANSSERVER DIALOGEX 0, 0, 379, 205
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_TRANSSERVER,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,379,204
+END
+
+IDD_DIALOG_CALCULATION_SERVER DIALOGEX 0, 0, 592, 306
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_CALCULATION_SERVER,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,578,292
+END
+
+IDD_DIALOG_SEARCH_TRANS DIALOGEX 0, 0, 569, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_SEARCH_TRANS,48,11,453,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Search : ",IDC_STATIC_SEARCH,12,14,32,8
+END
+
+IDD_DIALOG_TRANS_DETAILS DIALOGEX 0, 0, 277, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_IPLIST1,24,25,112,14,ES_AUTOHSCROLL
+    CTEXT           "Refresh Time :",IDC_STATIC_REFRESHTIME,179,11,48,8
+    CTEXT           "IP List : ",IDC_STATIC_IPLIST,59,11,27,8
+    EDITTEXT        IDC_EDIT_IPLIST2,24,49,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IPLIST3,24,73,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REFRESH_TIME1,159,25,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REFRESH_TIME2,159,49,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REFRESH_TIME3,159,73,112,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_TRANSSERVER, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CALCULATION_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 585
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_DIALOG_SEARCH_TRANS, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TRANS_DETAILS, DIALOG
+    BEGIN
+        VERTGUIDE, 24
+        VERTGUIDE, 136
+        VERTGUIDE, 156
+        VERTGUIDE, 272
+        HORZGUIDE, 11
+        HORZGUIDE, 22
+        HORZGUIDE, 48
+        HORZGUIDE, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Details"
+    BEGIN
+        MENUITEM "&Copy Server IP...",          ID_MENU_COPY_SERVER_IP
+        MENUITEM "Copy Upstream IP...",         ID_MENU_COPY_UPSTREAM_IP
+        MENUITEM "Pick up a color...",          ID_DETAILS_PICKUPACOLOR
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Detail Trans...(ctrl + d)",   ID_EDIT_DETAILS
+        MENUITEM "Search Trans...(ctrl + f)",   ID_EDIT_SEARCH_TRANS
+        MENUITEM "&Auto Popup",                 ID_EDIT_AUTOPOPUP, CHECKED
+        MENUITEM "&Play Music",                 ID_EDIT_PLAYMUSIC
+        MENUITEM "Help..",                      ID_EDIT_HELP
+    END
+END
+
+IDR_MENU3 MENU
+BEGIN
+    POPUP "&Details"
+    BEGIN
+        MENUITEM "Details ( Market ) ",         ID_DETAILS_DETAILSMARKET
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "F",            IDC_COMBO_SEARCH_TRANS, VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_ACCELERATOR2 ACCELERATORS
+BEGIN
+    "D",            ID_EDIT_DETAILS,        VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MultiMonitor.rc2"  // ????ì??ì? Microsoft Visual C++ ???¨???§?§???§????ì??ì?-|??¨??????¨???§|???§?o???
+#include "afxres.rc"     // ???¨???§?§???§?o???¨???§|????¨???§|???§?|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
